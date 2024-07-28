@@ -1,0 +1,90 @@
+/* 
+color 
+#292F33
+#2E3233
+#36464B
+#426975
+#0FBDF4
+#3F89A0
+#2EA6CA
+
+text-size
+12 , 14 , 16, 18, 22, 24, 28, 32, 64, 68, 72, or more
+*/
+
+/* only test */
+
+* {
+  /* if you dont not (*) means all the elemnts in the html file */
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background-color: #292f33;
+}
+.nav_container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  font-size: 18px;
+  width: 80%;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.nav a:hover {
+  color: #0fbdf4;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+#search {
+  padding: 7px 20px;
+  outline: none;
+  width: 300px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+}
+#search::placeholder {
+  color: black;
+  margin-left: 50px;
+}
+.icon__search {
+  position: relative;
+  right: 30px;
+  top: 2px;
+}
+.categories {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: 30px;
+}
+.img__profile {
+  height: 40px;
+}
+.img__profile img {
+  height: 100%;
+  border-radius: 50%;
+}
+.icon__saved {
+  height: 30px;
+}
