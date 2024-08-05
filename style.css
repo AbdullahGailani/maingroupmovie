@@ -18,9 +18,13 @@ text-size
   /* if you dont not (*) means all the elemnts in the html file */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 .nav {
   background-color: #292f33;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 .nav_container {
   margin: 0 auto;
@@ -91,6 +95,10 @@ text-size
 .card-container {
   transform: scale(0.7);
   display: inline-block;
+  transition: 0.6s ease;
+}
+.card-container:hover {
+  transform: scale(0.8);
 }
 .card {
   margin-top: 10px;
@@ -110,6 +118,7 @@ text-size
 }
 .img img {
   height: 100%;
+  width: 100%;
 }
 .name {
   display: grid;
